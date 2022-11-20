@@ -1,6 +1,6 @@
 package colorcoder;
 
-static class ColorPair {
+public class ColorPair {
         final static String MajorColorNames[] = {
 	        "White", "Red", "Black", "Yellow", "Violet"
 	    };
