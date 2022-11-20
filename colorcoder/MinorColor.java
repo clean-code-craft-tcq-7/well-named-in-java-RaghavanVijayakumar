@@ -1,4 +1,6 @@
- enum MinorColor {
+package colorcoder;
+
+enum MinorColor {
         BLUE(0),
         ORANGE(1),
         GREEN(2),
