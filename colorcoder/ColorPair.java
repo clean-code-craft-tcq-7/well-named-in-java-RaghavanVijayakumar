@@ -30,7 +30,6 @@ public class ColorPair {
             colorPairStr += MinorColorNames[minorColor.getIndex()];
             return colorPairStr;
         }
-    };
 
     static ColorPair GetColorFromPairNumber(int pairNumber) {
         int zeroBasedPairNumber = pairNumber - 1;
@@ -43,3 +42,4 @@ public class ColorPair {
     static int GetPairNumberFromColor(MajorColor major, MinorColor minor) {
         return major.getIndex() * numberOfMinorColors + minor.getIndex() + 1;
     }
+ };
