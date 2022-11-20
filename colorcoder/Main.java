@@ -1,14 +1,12 @@
 package colorcoder;
 
-public class Main {
-    final static String MajorColorNames[] = {
-        "White", "Red", "Black", "Yellow", "Violet"
-    };
-    final static int numberOfMajorColors = MajorColorNames.length;
-    final static String MinorColorNames[] = {
-        "Blue", "Orange", "Green", "Brown", "Slate"
-    };
-    final static int numberOfMinorColors = MinorColorNames.length;
+public class Main extends ColorPair {
+   
+     public Main(MajorColor major, MinorColor minor) {
+		super(major, minor);
+		// TODO Auto-generated constructor stub
+	}
+    
     static void testNumberToPair(int pairNumber,
         MajorColor expectedMajor,
         MinorColor expectedMinor)
