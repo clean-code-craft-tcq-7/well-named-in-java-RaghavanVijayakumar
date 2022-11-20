@@ -1,6 +1,6 @@
 package colorcoder;
 
-public class Main {
+public class TestNumberPairConversion {
     final static String MajorColorNames[] = {
         "White", "Red", "Black", "Yellow", "Violet"
     };
