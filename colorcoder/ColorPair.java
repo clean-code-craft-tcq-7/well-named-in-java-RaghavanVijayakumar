@@ -1,4 +1,6 @@
- static class ColorPair {
+package colorcoder;
+
+static class ColorPair {
         private MajorColor majorColor;
         private MinorColor minorColor;
         
