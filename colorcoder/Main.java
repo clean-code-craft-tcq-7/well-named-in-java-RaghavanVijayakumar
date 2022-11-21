@@ -1,37 +1,16 @@
 package colorcoder;
 
-public class Main extends ColorPair {
-   
-     public Main(MajorColor major, MinorColor minor) {
-		super(major, minor);
-		// TODO Auto-generated constructor stub
+public class Main {
+
+	public static void main(String[] args) {
+		ColorPairTest.testNumberToPair(4, MajorColor.WHITE, MinorColor.BROWN);
+		ColorPairTest.testNumberToPair(5, MajorColor.WHITE, MinorColor.SLATE);
+
+		ColorPairTest.testPairToNumber(MajorColor.BLACK, MinorColor.ORANGE, 12);
+		ColorPairTest.testPairToNumber(MajorColor.VIOLET, MinorColor.SLATE, 25);
+
+		ColorCodeTest.testColorToCode(21, MajorColor.VIOLET, MinorColor.BLUE);
+		ColorCodeTest.testColorToCode(12, MajorColor.BLACK, MinorColor.ORANGE);
+
 	}
-    
-    static void testNumberToPair(int pairNumber,
-        MajorColor expectedMajor,
-        MinorColor expectedMinor)
-    {
-        ColorPair colorPair = GetColorFromPairNumber(pairNumber);
-        System.out.println("Got pair " + colorPair.ToString());
-        assert(colorPair.getMajor() == expectedMajor);
-        assert(colorPair.getMinor() == expectedMinor);
-    }
-
-    static void testPairToNumber(
-        MajorColor major,
-        MinorColor minor,
-        int expectedPairNumber)
-    {
-        int pairNumber = GetPairNumberFromColor(major, minor);
-        System.out.println("Got pair number " + pairNumber);
-        assert(pairNumber == expectedPairNumber);
-    }
-
-    public static void main(String[] args) {
-        testNumberToPair(4, MajorColor.WHITE, MinorColor.BROWN);
-        testNumberToPair(5, MajorColor.WHITE, MinorColor.SLATE);
-    
-        testPairToNumber(MajorColor.BLACK, MinorColor.ORANGE, 12);
-        testPairToNumber(MajorColor.VIOLET, MinorColor.SLATE, 25);
-    }
 }
